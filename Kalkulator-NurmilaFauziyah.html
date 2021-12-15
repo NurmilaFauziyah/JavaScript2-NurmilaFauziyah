@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="bilanganPertama" type="number" onchange="pertambahan()"><br>+<br>
+    <input id="bilanganKedua" type="number" onchange="pertambahan()"><br>=<br>
+    <div id="hasilTambah"></div>
+    
+    <script>
+
+        function pertambahan() {
+            const bilanganPertama = document.getElementById("bilanganPertama").value;
+            const bilanganKedua = document.getElementById("bilanganKedua").value;
+            const hasilTambah = document.getElementById("hasilTambah");
+            hasilTambah.innerHTML = Number(bilanganPertama) + Number(bilanganKedua);
+        }
+
+    </script>
+
+
+</body>
+</html>
